@@ -11,6 +11,7 @@
     ul li {
       margin:15px;
     }
+    /* ::before요소 와 ::after요소 사용하면 지정한 요소의 내용 앞뒤에 스타일을 넣을 수 있다. */
     li.new::after {
       content:"NEW!!";
       font-size:x-small;
@@ -27,9 +28,11 @@
   <div class="container">
     <h1>제품 목록</h1>
     <ul>
+      <!-- li.new에 해당된다. -->
       <li class="new">제품 A</li>
       <li>제품 B</li>
       <li>제품 C</li>
+      <!-- li.new에 해당한다. -->
       <li class="new">제품 D</li>
     </ul>
   </div>

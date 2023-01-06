@@ -24,18 +24,22 @@
     width:150px;
     padding:10px;   
   }
+  /*  a:link --> a태그는 link 가상 클래스 선택자를 적용한다는 의미, link가상 클래스 선택자 : 방문하지 않은 링크에 스타일을 적용하는 선택자 */
+  /* 브라우저 안에 캐싱(?)이 있기 때문에 visited가 되는지 아닌지 알 수 있게 되는 것이다. */
   .navi a:link, .navi a:visited{
     display:block;
     font-size:14px;
-    color:#000;
+    color:#000; /* 원래 link를 하면 color가 파랑색이다. 하지만 link를 들어갔다 돌아오게 되면 즉, visited하게 되면 color는 보라색으로 된다. */
     padding: 10px; 
     text-decoration: none;  /* 밑줄 없앰 */
     text-align: center;
   }
+  /* 특정 요소에 마우스 포인터를 올려놓으면 스타일 적용하는 선택자 : hover 선택자, 웹 요소에 초점이 맞추어졌을 때 스타일 적용하는 선택자 : focus 선택자 */
   .navi a:hover,  .navi a:focus {
     background-color:#222;  /* 배경 색 */
     color:#fff;  /* 글자 색 */
   }
+  /* 클릭했을 때 스타일 지정하는 선택자 : active 선택자 */
   .navi a:active {
     background-color:#f00;  /* 배경 색 */
   }

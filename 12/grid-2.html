@@ -9,6 +9,8 @@
       width:600px;
       display:grid;  /* 그리드 컨테이너 지정 */
       grid-template-columns:repeat(3, 1fr);  /* 너비가 같은 칼럼 3개 */
+      /* grid-template-columns: 1fr 1fr 1fr; 과 위의 코드는 같은 것이다. */
+      /* 너비가 같은 칼럼을 n개 배치하려면 1fr을 n번 사용해야하는데 이때 repeat() 함수를 사용하여 다음과 같이 간단하게 작성할 수 있다. --> repeat(n, 1fr) */
       grid-template-rows: minmax(100px, auto);  /* 줄 높이 최소 100px */
     }
     .items{

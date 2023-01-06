@@ -6,9 +6,11 @@
     <title>CSS Grid Layout</title>
     <style>
       #wrapper{
-        display:grid;
-        grid-template-columns: 200px 200px 200px;
-        grid-template-rows:100px;
+        /* 그리드 컨테이너를 지정하는 display 속성 : 그리드 레이아웃을 지정할 때 가장 먼저 그리드를 적용할 바깥 부분을 그리드 컨테이너로 만들어야 한다. */
+        /* grid : 컨테이너 안의 항목을 블록 레벨 요소로 배치한다. */
+        display:grid; /* 그리드 컨테이너 지정 */
+        grid-template-columns: 200px 200px 200px; /* 너비가 200px인 칼럼 3개 */
+        grid-template-rows: 100px; /* 줄 높이 100px */
       }
     .items{
       padding:10px;
