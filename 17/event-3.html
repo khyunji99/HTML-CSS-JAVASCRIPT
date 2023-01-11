@@ -18,8 +18,8 @@
 
 	<script>
 		var cup = document.querySelector("#cup");  // id = cup인 요소를 가져옴
-		cup.onclick = function(event) {
-			alert("이벤트 유형: " + event.type + ", 이벤트 발생 위치 : " + event.pageX + "," + event.pageY);	
+		cup.onclick = function(event) { // click이 event가 되는 함수
+			alert("이벤트 유형 : " + event.type + ", 이벤트 발생 위치 : " + event.page + ", " + event.pageY);
 		}
 	</script>
 </body>

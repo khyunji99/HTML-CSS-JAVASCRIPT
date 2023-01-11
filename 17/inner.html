@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>innerText, innerHTML 프로퍼티</title>
 </head>
+
 <body>
 	<button onclick="inntext()">innerText로 표시하기</button>
 	<button onclick="innhtml()">innerHTML로 표시하기</button>
 	<h1>현재 시각: </h1>
 	<div id="current"></div>
-	
+
 	<script>
 		var now = new Date();
 
-		function inntext(){
+		function inntext() {
 			document.getElementById("current").innerText = now;
+			// <div id="current"></div> 선택하는 것
 		}
 		function innhtml() {
 			document.getElementById("current").innerHTML = "<em>" + now + "</em>";
+			// <em> 태그는 강조된 텍스트(emphasized text)를 표현할 때 사용 -> 이텔릭체(기울임체)
 		}
 	</script>
 </body>
+
 </html>

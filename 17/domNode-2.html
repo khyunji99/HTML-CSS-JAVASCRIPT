@@ -24,7 +24,7 @@
     function addP() {
       var newP = document.createElement("p");
       var txtNode = document.createTextNode("DOM은 Document Object Model의 줄임말입니다.");
-      newP.appendChild(txtNode);
+      newP.appendChild(txtNode); // 다음과 같이 새로운 p태그 생성됨 -> <p>DOM은 Document Object Model의 줄임말입니다.</p>
       document.getElementById("info").appendChild(newP);
     }
   </script>

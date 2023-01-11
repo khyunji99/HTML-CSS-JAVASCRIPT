@@ -18,8 +18,10 @@
   
 	<script>
 		var cover = document.getElementById("cover");
-		cover.addEventListener("mouseover",changePic, false);
-    cover.addEventListener("mouseout",originPic, false);
+    cover.onmouseover = changePic;
+    cover.onmouseout = originPic; // 이렇게 코드 작성해도 똑같은 결과 도출한다.
+		// cover.addEventListener("mouseover",changePic, false);
+    // cover.addEventListener("mouseout",originPic, false);
     
     function changePic() {
       cover.src = "images/easys-2.jpg";

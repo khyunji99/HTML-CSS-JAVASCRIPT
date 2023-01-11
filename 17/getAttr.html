@@ -21,10 +21,10 @@
 		<div id="desc">
 			<ul>
 				<li>상품명 : 에디오피아 게뎁</li>
-				<li class="bluetext">판매가 : 9,000원</li>
+				<li class="bluetext">판매가 : 20,000원</li>
 				<li>배송비 : 3,000원<br>(50,000원 이상 구매시 무료)</li>
 				<li>적립금 : 180원(2%)</li>
-				<li>로스팅 : 2019.06.17</li>
+				<li>로스팅 : 2023.01.11</li>
 				<button>장바구니 담기</button>
 			</ul>				
 			<a href="#" id="view">상세 설명 보기</a>				
@@ -50,9 +50,16 @@
 
 	<script>
 		function displaySrc() {
-			var cup = document.querySelector("#cup");
+			// let cup = document.querySelector("#cup");
+			let cup = document.getElementById("cup"); // 이 코드는 위의 코드와 같은 결과를 출력해내는 코드이다.
 			alert("이미지 소스 : " + cup.getAttribute("src"));
-		}	
+		}
+
+		// function displaySrc() {
+		// 	var cup = document.querySelector("#cup");
+		// 	alert("이미지 소스 : " + cup.getAttribute("src"));
+		// 	// 이미지를 한번 클릭하면 그 이미지의 소스를 보여주는 것
+		// }	
 	</script>
 </body>
 </html>

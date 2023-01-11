@@ -1,24 +1,40 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>이벤트 공지</title>
   <style>
-    #container 
-    {
-      width:600px;
-      margin:10px auto;
-      padding:10px;
-      text-align:center;
-    }        
+    #container {
+      width: 600px;
+      margin: 10px auto;
+      padding: 10px;
+      text-align: center;
+    }
   </style>
 </head>
+
 <body>
   <div id="container">
     <h1>이벤트 공지</h1>
     <img src="images/doit.jpg">
-    <p><a href="doit-main.html">자세히 보기</a></p>  
+    <p><a href="doit-main.html" onclick="loadURL(this.href); return false">자세히 보기</a></p>
+    <!-- <a>태그에서 링크된 문서를 메인 창에서 표시할 수 있도록 해야한다.
+      위와 같이 <a> 태그의 href 속성값을 인수로 넘겨주는 loadURL() 함수를 실행한다.
+      이때 this는 click 이벤트가 발생한 대상, 즉 a 객체를 가리킨다. 그리고 return false는
+      링크를 클릭했을 때 기본 동작(링크를 연결하는 것)을 취소한다는 뜻이다. -->
+    <!-- a 태그가 원래 가려고 하는 doit-main.html로 이동하려고 하는 것을 return false를 적어줌으로써 막는 것이다..? -->
   </div>
+
+  <script>
+    function loadURL(url) {
+      window.opener.location = url; // 부모 창(creator)의 location에 url을 넘긴다.
+      // window.opener는 open("notice.html")메서드 실행된 URL를 저장하는 프로퍼티
+      window.close();               // 현재 창 닫기
+    }
+  </script>
+
 </body>
+
 </html>

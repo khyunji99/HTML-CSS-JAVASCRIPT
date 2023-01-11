@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>location Object</title>
 	<style>
 		#container {
-			width:500px;
-			margin:10px auto;
+			width: 500px;
+			margin: 10px auto;
 		}
+
 		#display {
-			margin-top:10px;
-			padding:10px;
-			border:1px solid #222;
-			box-shadow: 1px 0 1px #ccc;			
+			margin-top: 10px;
+			padding: 10px;
+			border: 1px solid #222;
+			box-shadow: 1px 0 1px #ccc;
 		}
+
 		p {
-			font-size:1em;
+			font-size: 1em;
 		}
+
 		button {
-			margin-top:20px;
-			text-align:center;
+			margin-top: 20px;
+			text-align: center;
 		}
 	</style>
 </head>
-<body>	
+
+<body>
 	<div id="container">
 		<h2>location 객체 </h2>
 		<div id="display">
 			<script>
 				document.write("<p><b>location.href : </b>" + location.href + "</p>");
+				// href : 전체 URL // ex) http://127.0.0.1:5500/16/locationObject.html
 				document.write("<p><b>location.host : </b>" + location.host + "</p>");
+				// host : URL의 호스트 이름과 폰트 번호 // ex) 127.0.0.1:5500/16
 				document.write("<p><b>location.protocol : </b>" + location.protocol + "</p>");
-			</script>		
+				// protocol : URL의 프로토콜 저장 // ex) http://
+			</script>
 		</div>
 		<button onclick="location.replace('http://www.easyspub.com')">이지스퍼블리싱 홈페이지로 이동하기</button>
-</div>		
+	</div>
 </body>
+
 </html>
